@@ -13,8 +13,17 @@ var temp1 = 85
 var temp2 = 350
 var temp3 = 212
 
+const temperaturePoints = (number) => {
+  if (number < 212) {
+    return `${number} is below boiling point`
+  }else if (number === 212) {
+      return `${number} is at boiling point`
+    }else if (number > 212) {
+        return `${number} is above boiling point`
 
-
+      }
+    }
+    console.log(temperaturePoints(temp1));
 
 
 // --------------------2) Create a function that multiplies each number in the array by 5 using a for loop.
@@ -23,16 +32,36 @@ var temp3 = 212
 var myForNumbers1 = [3, 7, 0, 6, -9]
 var myForNumbers2 = [2, 5, -8, 20, 32]
 
+//setup function that multiplies every number in the array provided by 5 in a a loop
+const mutlipies = (array) => {
+var arrayOne = []
+for (let i = 0; i < array.length; i++) {
+console.log(array[i] * 5);
 
+}
+ return arrayOne.push(array * 5)
+
+}
+console.log(mutlipies(myForNumbers1));
 
 
 
 // --------------------3) Create a function that multiplies each number in the array by 5 using map.
-// Use the test variable provided below. Expected outcome: [435, 30, 140, 80, 10] [40, -35, 0, 30, 60]
+// Use the test variable provided below.
+
+//Expected outcome: [435, 30, 140, 80, 10] [40, -35, 0, 30, 60]
 
 var myMapNumbers1 = [87, 6, 28, 16, 2]
 var myMapNumbers2 = [8, -7, 0, 6, 12]
 
+const mult5 = (array) => {
+  let newArr = []
+  for (let i = 0; i < array.length; i++) {
+    newArr.push(array[i] * 5)
+  }
+  return newArr
+}
+console.log(mult5(myMapNumbers1));
 
 
 
@@ -40,8 +69,28 @@ var myMapNumbers2 = [8, -7, 0, 6, 12]
 // --------------------4) Create a function that removes all the vowels from a string.
 // Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
 
-var stringWithVowels1 = "HeyThereLearnStudent"
-var stringWithVowels2 = "ILoveJavaScript"
+// var stringWithVowels1 = "HeyThereLearnStudent"
+// var stringWithVowels2 = "ILoveJavaScript"
+
+//setup function that takes in a string of letters and removes the vowels
+//this function will recognize the index and remove vowel
+
+var vowels = "heytherelearnstudent"
+// var res = str.split("a", "")
+
+const vowel = (vowels) => {
+   var arrayFour = []
+for (let i = 0; i < vowels.length; i++) {
+  arrayFour.join(array[i])
+}
+return arrayFour
+}
+
+console.log(vowels.split("a"))
+console.log(vowels.split("e"));
+
+//not returning any other vowels through the function besides removing "a"
+//function not set properly. just returning vowels split in console log
 
 
 
@@ -54,6 +103,22 @@ var refactorTester1 = true
 var refactorTester2 = 42
 var refactorTester3 = "IAmACodingMaster"
 
+//function recognizes the vowel is and returns non string edge cases.
+//let us know what the varible is, if its a booleon, string, etc.
+
+
+const refactorTester1 = (vowels) => {
+   let arrayFour = []
+for (let i = 0; i < vowels.length; i++) {
+  vowels.join(arrayFour)
+}
+return arrayFour
+}
+
+console.log(refactorTester1.split())
+
+//still not returning correct 
+
 
 
 
@@ -63,8 +128,18 @@ var refactorTester3 = "IAmACodingMaster"
 
 var utensils = ["fork", "knife", "tongs", "chopsticks", "skewer"]
 var vessels = ["cup", "mug", "stemware", "glass", "tumbler", "tea cup"]
+ //setup function that acccess an index in an array that is the longest word and return the longest word
+//funtion returning array of string.
+//needs to return just longest word.
+ const longestWord = (array) => {
+   for (let i = 0; i < array.length; i++) {
+     array[i].filter(longestWord)
+   }
+   return longestWord % 2===0
+ }
+console.log(vessels[2])
 
-
+//function not working. only passing through console log :(
 
 
 
@@ -73,3 +148,14 @@ var vessels = ["cup", "mug", "stemware", "glass", "tumbler", "tea cup"]
 
 var mario = ["Luigi", "Peach", "Toad", "Yoshi"]
 var pacman = ["Inky", "Blinky", "Pinky", "Clyde"]
+
+//setup funtion that will remove the last letter of each character in the array of strings
+
+const lastLetter = (array) => {
+  var newArr = []
+  for (let i = 0; i < array.length; i++) {
+    array[i]
+  }
+  return newArrarray.pop("")
+}
+console.log(mario);
