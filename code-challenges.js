@@ -36,10 +36,10 @@ var myForNumbers2 = [2, 5, -8, 20, 32]
 const mutlipies = (array) => {
 var arrayOne = []
 for (let i = 0; i < array.length; i++) {
-console.log(array[i] * 5);
+(array[i] * 5);
 
 }
- return arrayOne.push(array * 5)
+ return arrayOne
 
 }
 console.log(mutlipies(myForNumbers1));
@@ -81,7 +81,7 @@ var vowels = "heytherelearnstudent"
 const vowel = (vowels) => {
    var arrayFour = []
 for (let i = 0; i < vowels.length; i++) {
-  arrayFour.join(array[i])
+  arrayFour.join(array[i] !== "a")
 }
 return arrayFour
 }
@@ -108,6 +108,8 @@ var refactorTester3 = "IAmACodingMaster"
 
 
 const refactorTester1 = (vowels) => {
+//if(typeof(vowels !== "string"))
+//return `${vowels} is a string`
    let arrayFour = []
 for (let i = 0; i < vowels.length; i++) {
   vowels.join(arrayFour)
@@ -117,7 +119,8 @@ return arrayFour
 
 console.log(refactorTester1.split())
 
-//still not returning correct 
+//still not returning correct
+//going back through I should have used if statememts and return statments. I should have NOT used a for loop
 
 
 
@@ -140,6 +143,7 @@ var vessels = ["cup", "mug", "stemware", "glass", "tumbler", "tea cup"]
 console.log(vessels[2])
 
 //function not working. only passing through console log :(
+//it is only pulling the arrays index through console log.
 
 
 
@@ -156,6 +160,9 @@ const lastLetter = (array) => {
   for (let i = 0; i < array.length; i++) {
     array[i]
   }
-  return newArrarray.pop("")
+  return newArr.pop("")
 }
 console.log(mario);
+
+
+//looking back on all my code after sarah going through the problems I used for loops for all of them when i could have used if, if else, return statements would have made it a lot easier. 

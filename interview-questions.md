@@ -73,9 +73,9 @@ Functions are designed to be used many times in a program and should be as gener
 
 Research and define the following terms to the best of your ability.
 
-- Jest
-- Test Driven Development
-- Classes
-- React
-- React State
-- CRUD
+- Jest - tests javascript code, maintained by facebook  
+- Test Driven Development - testing software before wrote
+- Classes -  contains data and methods in objects. blueprint of objects
+- React - javascript for creating UI
+- React State - an object built into react
+- CRUD - Create, read, update, delete
